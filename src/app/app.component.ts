@@ -7,7 +7,7 @@ import { ClientesComponent } from './clientes/clientes.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, DirectivaComponent, ClientesComponent],
+  imports: [HeaderComponent, FooterComponent, ClientesComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
