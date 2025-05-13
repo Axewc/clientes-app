@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
 export class DirectivaComponent {
   listaCurso : string[] = ['TypeScript', 'JavaScript', 'Java', 'C#', 'PHP'];
 
+  habilitar: boolean = true;
+
   constructor() {}
 
 }

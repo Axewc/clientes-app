@@ -1,8 +1,10 @@
+<button type="button" (click)="habilitar = (habilitar==true)? false : true" class = "btn btn-primary my-3"> Ocultar </button>
 <div class = "card">
     <div class = "card-header">
         <h3>Listado de Cursos</h3>
     </div>
-    <ul class = "list-group">
+
+    <ul class = "list-group" *ngIf="habilitar == true">
         <li class = "list-group-item" *ngFor="let curso of listaCurso"> {{ curso }} </li>
 
     </ul>
