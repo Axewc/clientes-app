@@ -8,6 +8,7 @@ import { ClienteService } from './cliente.service';
 @Component({
   selector: 'app-clientes',
   templateUrl: './clientes.component.html',
+  standalone: true,
   imports: [CommonModule, RouterModule]
 })
 export class ClientesComponent implements OnInit {
@@ -21,7 +22,6 @@ export class ClientesComponent implements OnInit {
     this.clienteService.getClientes().subscribe(
       (clientes: Cliente[]) => {
         this.clientes = clientes;
-        //console.log(this.clientes);
       });
   }
 }

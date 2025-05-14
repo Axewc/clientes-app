@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
   selector: 'app-directiva',
   templateUrl: './directiva.component.html',
   styleUrls: ['./directiva.component.css'],
+  standalone: true,
   imports: [CommonModule, RouterModule]
 })
 export class DirectivaComponent {

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
-    styleUrls: []
+    styleUrls: [],
+    standalone: true,
+    imports: [RouterModule]
 })
 export class HeaderComponent {
-
     title: string = 'Bienvenido al curso de Angular';
-    
-
 }
