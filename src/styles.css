@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Add styles for clickable links */
+a.nav-link {
+  cursor: pointer;
+}
+
+/* Ensure active links are highlighted */
+a.nav-link.active {
+  font-weight: bold;
+  color: #fff;
+}

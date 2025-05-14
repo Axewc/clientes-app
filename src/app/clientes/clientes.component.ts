@@ -1,21 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { Cliente } from './cliente';
-import { CLIENTES } from './clientes.json';
+import { ClienteService } from './cliente.service';
+
 
 @Component({
   selector: 'app-clientes',
   templateUrl: './clientes.component.html',
-  imports: [CommonModule]
+  imports: [CommonModule, RouterModule]
 })
-export class ClientesComponent {
+export class ClientesComponent implements OnInit {
 
-  clientes: Cliente[]=[];
+  clientes: Cliente[] = [];
   
-  constructor() {}
+  
+  constructor(private clienteService : ClienteService) { }
 
   ngOnInit() {
-    this.clientes = CLIENTES
-
+    this.clienteService.getClientes().subscribe(
+      (clientes: Cliente[]) => {
+        this.clientes = clientes;
+        //console.log(this.clientes);
+      });
   }
 }

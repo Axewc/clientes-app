@@ -1,20 +1,17 @@
-<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-  <a class="navbar-brand" href="#">Angular App</a>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading1">First</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading2">Second</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-        <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-      </ul>
-    </li>
-  </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">{{ title }}</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/directivas" routerLinkActive="active">Directivas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/clientes" routerLinkActive="active">Clientes</a>
+      </li>
+    </ul>
+  </div>
 </nav>

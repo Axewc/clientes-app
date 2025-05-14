@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+    title: string = 'Bienvenido al curso de Angular';
+    
 
 }
